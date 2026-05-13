@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madumitha Murugesan - Resume (Light Mode)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #4b5563;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.5;
+            color: var(--primary);
+            background-color: #f3f4f6;
+            padding: 40px 20px;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--bg);
+            padding: 50px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .entry {
+            margin-bottom: 20px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .date-location {
+            font-size: 13px;
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        .tags {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 13.5px;
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 4px;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-item {
+            font-size: 13px;
+        }
+
+        .skill-item b {
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.05em;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .coursework-list {
+            font-size: 13px;
+            color: var(--secondary);
+        }
+
+        @media print {
+            body { background: none; padding: 0; }
+            .resume { box-shadow: none; max-width: 100%; padding: 0; }
+            .no-print { display: none; }
+        }
+
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn no-print" onclick="window.print()">Download PDF</button>
+
+    <div class="resume">
+        <header>
+            <h1>Madumitha Murugesan</h1>
+            <div class="contact">
+                <span>madumithamurugesan@gmail.com</span>
+                <span>|</span>
+                <a href="https://linkedin.com/in/madumitha-m">linkedin.com/in/madumitha-m</a>
+                <span>|</span>
+                <a href="https://github.com/kutty04">github.com/kutty04</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="title">Anand Institute of Higher Technology</span>
+                    <span class="date-location">Chennai, TN | Expected 2027</span>
+                </div>
+                <div class="subtitle">B.E. Computer Science Engineering — CGPA: 8.0/10.0</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <b>Languages</b>
+                    JavaScript, Python, SQL, Dart
+                </div>
+                <div class="skill-item">
+                    <b>Frontend & Mobile</b>
+                    React.js, Flutter, Tailwind CSS, Vite
+                </div>
+                <div class="skill-item">
+                    <b>Backend & Database</b>
+                    Node.js, Express, Supabase, PostgreSQL, Firebase
+                </div>
+                <div class="skill-item">
+                    <b>Tools & AI</b>
+                    Git, GitHub, REST APIs, OpenAI, Hugging Face, Google Maps API
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Experience</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="title">Full-Stack Developer (Self-Directed Projects)</span>
+                    <span class="date-location">Chennai, TN | Ongoing</span>
+                </div>
+                <ul>
+                    <li>Architected and deployed full-stack applications on Vercel (frontend) and Render (backend) using Supabase PostgreSQL databases, managing real-time data synchronization across 30+ routes and 4,463 stops.</li>
+                    <li>Implemented real-time WebSocket-based feeds and GPS-based geolocation services using the Haversine formula for precise stop detection within a 500m radius, reducing manual selection errors by 90%.</li>
+                    <li>Built automated data pipelines processing GTFS transit datasets (2,943 routes), reducing manual data setup time from ~40 hours to under 2 minutes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="title">Smart Chennai Bus Crowding Tracker</span>
+                    <span class="date-location">React, Node, Flutter, Supabase</span>
+                </div>
+                <div class="tags">Real-time Mobility & ML</div>
+                <ul>
+                    <li>Engineered a full-stack platform enabling 30+ bus routes with real-time crowding level reporting (20%/50%/90% granularity), "Just Left" notifications, and AC/Non-AC filtering.</li>
+                    <li>Achieved 99.2% uptime for 1000+ test users; features include WebSocket feeds, offline support, and LSTM-based prediction models (85% accuracy) for overcrowding forecasts.</li>
+                    <li>Status: Ready for Play Store publication (June 2026), targeting campus commuters across Chennai.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="title">RAG-Based GitHub Code Intelligence Assistant</span>
+                    <span class="date-location">Python, LangChain, FAISS</span>
+                </div>
+                <div class="tags">AI / LLM Engineering</div>
+                <ul>
+                    <li>Designed a RAG system for intelligent code explanation and repository intelligence, achieving 92% retrieval accuracy on a 50-repository benchmark with sub-500ms query response times.</li>
+                    <li>Automated the pipeline: repository cloning &rarr; code chunking (512-token windows) &rarr; embedding generation &rarr; FAISS vector indexing.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="title">F1 Performance Intelligence Dashboard</span>
+                    <span class="date-location">React, Tailwind, Recharts</span>
+                </div>
+                <div class="tags">Data Visualization</div>
+                <ul>
+                    <li>Developed a production-grade analytics dashboard visualizing 70+ F1 seasons; optimized data fetching using React Query, reducing API calls by 65% and improving load times to &lt; 1.5s.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Achievements & Coursework</h2>
+            <div class="entry">
+                <ul>
+                    <li><b>Engineering:</b> Built 7+ full-stack and AI-integrated systems with measurable real-world impact.</li>
+                    <li><b>Coursework:</b> Data Structures & Algorithms, OOP, DBMS, Operating Systems, Machine Learning, Cloud Computing.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
